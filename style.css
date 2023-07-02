@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  background-color: #e4ebf5;
+  position: relative;
+}
+
+header div, header nav {
+  min-height: 45px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .nav-bar {
+  color: #27448d;
+  font-weight: 600;
+  box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem white;
+  border-radius: 15px;
+  border-radius: 0px 0px 15px 15px;
+  padding: 0em 1em;
+  background: #e4ebf5;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header ul {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+header li {
+  display: inline;
+  margin: 1em;
+  height: 100%;
+}
+
+main {
+  margin: 1em auto;
+}
+
+main .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+main .menu .sort-menu {
+  padding: 1em 2em;
+  background: #e4ebf5;
+  box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem white;
+  border-radius: 15px;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+
+main .menu .sort-menu svg {
+  stroke: #27448d;
+}
+
+main .menu .sort-menu button {
+  color: #27448d;
+  font-weight: 600;
+  width: 100%;
+  padding: 0.5em 0.5em;
+  box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem white;
+  border: none;
+  background-color: transparent;
+  border-radius: 15px;
+}
+
+main .menu .sort-menu button:hover {
+  box-shadow: inset 0.2rem 0.4rem 0.5rem #c8d0e7, inset -0.2rem -0.4rem 0.5rem white;
+}
+
+main .menu .sort-menu a {
+  color: #27448d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+main .menu .filter-menu {
+  display: flex;
+  flex-direction: column;
+  background: #e4ebf5;
+  box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem white;
+  border-radius: 15px;
+}
+
+main .menu .filter-menu a {
+  overflow: hidden;
+  text-decoration: none;
+  color: #27448d;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  text-align: center;
+  padding: 0.5em 0.5em;
+}
+
+main .menu .filter-menu a:hover:not(:last-child, .pressed) {
+  border-bottom: 1px solid #c8d0e752;
+}
+
+main .menu .filter-menu .pressed {
+  box-shadow: inset 0.2rem 0.4rem 0.5rem #c8d0e7, inset -0.2rem -0.4rem 0.5rem white;
+}
+
+main .menu .filter-menu .pressed-last {
+  box-shadow: inset 0.2rem 0.4rem 0.5rem #c8d0e7, inset -0.2rem -0.4rem 0.5rem white;
+  border-radius: 0px 0px 15px 15px;
+}
+
+main .menu .filter-menu .pressed-first {
+  box-shadow: inset 0.2rem 0.4rem 0.5rem #c8d0e7, inset -0.2rem -0.4rem 0.5rem white;
+  border-radius: 15px 15px 0px 0px;
+}
+
+main .wrapper-product {
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+main .wrapper-product .item {
+  max-width: 250px;
+  color: #27448d;
+  font-weight: 600;
+  box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem white;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  min-width: 250px;
+  min-height: 400px;
+}
+
+main .wrapper-product .item .description {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 1em 1em;
+}
+
+main .wrapper-product .item button {
+  all: unset;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem white;
+  border-radius: 15px;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 0px 0px 15px 15px;
+  padding: 0.75em 0em;
+}
+
+main .wrapper-product .item button:hover {
+  box-shadow: inset 0.2rem 0.4rem 0.5rem #c8d0e7, inset -0.2rem -0.4rem 0.5rem white;
+}
+
+main .wrapper-product .item .title {
+  word-wrap: break-word;
+  font-weight: 400;
+  max-width: 100%;
+}
+
+main .wrapper-product .item:hover {
+  cursor: pointer;
+}
+
+main .wrapper-product .item:hover .img_div {
+  background-size: 130%;
+}
+
+main .wrapper-product .img_div {
+  border-radius: 15px 15px 0px 0px;
+  transition: 0.25s ease;
+  background-position: center;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  min-height: 200px;
+}
+
+#exampleModalLive .modal-content {
+  border-radius: 15px;
+}
+
+#exampleModalLive .block-content .div_img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 300px;
+}
+
+#exampleModalLive .block-content .btn_buy {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid transparent;
+  border-top: 1px solid #dee2e6;
+  background-color: transparent;
+  padding: 0.5em 0em;
+  border-radius: 0px 0px 15px 15px;
+}
+
+#exampleModalLive .block-content .btn_buy:hover:not(:disabled) {
+  box-shadow: inset 0.2rem 0.4rem 0.5rem #c8d0e7, inset -0.2rem -0.4rem 0.5rem white;
+}
